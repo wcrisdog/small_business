@@ -1,0 +1,25 @@
+\begin{table}[!htbp]\centering
+\caption{PSM-DID Estimation Results}
+\label{tab:did_specs}
+\begin{threeparttable}
+\begin{tabular}{l*{4}{c}}
+\toprule
+ &  & (1) & (2) & (3) & (4) \\
+\midrule
+Post*Treat & 0.461*** & 0.373*** & 0.394*** & 0.394*** \\
+           & (0.090) & (0.026) & (0.037) & (0.036) \\
+\midrule
+Firm fixed effects & \xmark & \cmark & \cmark & \cmark \\
+Time fixed effects & \xmark & \xmark & \cmark & \cmark \\
+Sector * Time trend & \xmark & \xmark & \xmark & \cmark \\
+\midrule
+N & 41,840 & 41,840 & 41,840 & 41,840 \\
+$R^2$ & 0.076 & 0.855 & 0.856 & 0.857 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Note: Dependent variable is the logarithm of productivity, and all models use propensity score stabilized weights (WLS), with standard errors clustered at the firm level. Robust standard errors are reported in parentheses. $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.10$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
